@@ -27,23 +27,6 @@ This project covers the full data science pipeline — from raw audio preprocess
 
 ---
 
-## Repository Structure
-
-```
-├── Modelling_v2.ipynb          # Full pipeline: preprocessing → features → modelling
-├── features_extracted.csv      # Extracted feature matrix (434 recordings × 81 features)
-├── cat_distress_model_tuned.joblib  # Saved model artefacts (model + scaler + config)
-├── loco_results.csv            # Leave-one-cat-out evaluation results per cat
-└── hf_upload/
-    ├── app.py                  # Gradio inference app (deployed to HF Spaces)
-    ├── requirements.txt        # Space dependencies
-    ├── README.md               # Hugging Face model card
-    ├── config.json             # Inference configuration
-    └── feature_cols.json       # Ordered feature list for inference
-```
-
----
-
 ## Pipeline
 
 ### 1. Preprocessing
